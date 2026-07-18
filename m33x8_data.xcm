@@ -1,0 +1,19 @@
+statistic chi
+cd ../../../../Swift/products
+data 1:1 sw00031042002xpcw3posr_grp.pha
+response  1:1 /home/shreya/IUCAA/caldb/data/swift/xrt/cpf/rmf/swxpc0to12s6_20110101v014.rmf
+arf 1:1 /home/shreya/IUCAA/Swift/products/sw00031042002xpcw3posr.arf
+
+cd ../../Nustar/products/2001/FPMA
+data 2:2 nu50310002001A01_sr_grp.pha
+
+cd ../FPMB
+data 3:3 nu50310002001B01_sr_grp.pha
+
+cd ../../2003/FPMA
+data 4:4 nu50310002003A01_sr_grp.pha
+
+cd ../FPMB
+data 5:5 nu50310002003B01_sr_grp.pha
+ignore 1:1,198-423 2:1-34,228-357 3:1-33,229-319 4:1-31,211-304 5:1-33,208-339
+

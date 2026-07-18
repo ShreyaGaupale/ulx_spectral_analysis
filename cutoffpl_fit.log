@@ -1,0 +1,125 @@
+#XSPEC version: 12.15.0d
+#Build Date/Time: Thu Sep 25 14:31:39 2025
+#
+!XSPEC12> show data
+#
+#5 files 5 spectra 
+#Spectrum 1  Spectral Data File: sw00031042002xpcw3posr_grp.pha
+#Net count rate (cts/s) for Spectrum:1  4.076e-01 +/- 4.561e-03
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  2-197
+#  Telescope: SWIFT Instrument: XRT  Channel Type: PI
+#  Exposure Time: 1.959e+04 sec
+# Using fit statistic: chi
+# Using Response (RMF) File            /home/shreya/IUCAA/caldb/data/swift/xrt/cpf/rmf/swxpc0to12s6_20110101v014.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/shreya/IUCAA/Swift/products/sw00031042002xpcw3posr.arf
+#
+#Spectrum 2  Spectral Data File: nu50310002001A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:2  1.359e-01 +/- 1.197e-03 (92.2 % total)
+# Assigned to Data Group 2 and Plot Group 2
+#  Noticed Channels:  35-227
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.055e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001A01_bk.pha
+#  Background Exposure Time: 1.055e+05 sec
+# Using Response (RMF) File            nu50310002001A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001A01_sr.arf
+#
+#Spectrum 3  Spectral Data File: nu50310002001B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:3  1.397e-01 +/- 1.209e-03 (92.9 % total)
+# Assigned to Data Group 3 and Plot Group 3
+#  Noticed Channels:  34-228
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.052e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001B01_bk.pha
+#  Background Exposure Time: 1.052e+05 sec
+# Using Response (RMF) File            nu50310002001B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001B01_sr.arf
+#
+#Spectrum 4  Spectral Data File: nu50310002003A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:4  1.225e-01 +/- 1.150e-03 (93.0 % total)
+# Assigned to Data Group 4 and Plot Group 4
+#  Noticed Channels:  32-210
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.018e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003A01_bk.pha
+#  Background Exposure Time: 1.018e+05 sec
+# Using Response (RMF) File            nu50310002003A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003A01_sr.arf
+#
+#Spectrum 5  Spectral Data File: nu50310002003B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:5  1.217e-01 +/- 1.149e-03 (92.8 % total)
+# Assigned to Data Group 5 and Plot Group 5
+#  Noticed Channels:  34-207
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.015e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003B01_bk.pha
+#  Background Exposure Time: 1.015e+05 sec
+# Using Response (RMF) File            nu50310002003B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003B01_sr.arf
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : Chi-Squared                  365.78     using 196 bins, spectrum 1, group 1.
+#                 Chi-Squared                  251.20     using 193 bins, spectrum 2, group 2.
+#                 Chi-Squared                  283.53     using 195 bins, spectrum 3, group 3.
+#                 Chi-Squared                  198.43     using 179 bins, spectrum 4, group 4.
+#                 Chi-Squared                  215.97     using 174 bins, spectrum 5, group 5.
+#Total fit statistic                          1314.91     with 929 d.o.f.
+#
+#Test statistic : Chi-Squared                 1314.91     using 937 bins.
+# Null hypothesis probability of 8.43e-16 with 929 degrees of freedom
+#
+!XSPEC12> show parameters
+#
+#Parameters defined:
+#========================================================================
+#Model phabs<1>*constant<2>*cutoffpl<3> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   phabs      nH         10^22    0.312371     +/-  1.33456E-02  
+#   2    2   constant   factor              1.00000      frozen
+#   3    3   cutoffpl   PhoIndex            1.76208      +/-  5.26828E-02  
+#   4    3   cutoffpl   HighECut   keV      4.27433      +/-  0.158790     
+#   5    3   cutoffpl   norm                7.32250E-03  +/-  2.11119E-04  
+#                           Data group: 2
+#   6    1   phabs      nH         10^22    0.312371     = p1
+#   7    2   constant   factor              1.15155      +/-  3.04713E-02  
+#   8    3   cutoffpl   PhoIndex            1.76208      = p3
+#   9    3   cutoffpl   HighECut   keV      4.27433      = p4
+#  10    3   cutoffpl   norm                7.32250E-03  = p5
+#                           Data group: 3
+#  11    1   phabs      nH         10^22    0.312371     = p1
+#  12    2   constant   factor              1.15576      +/-  3.04070E-02  
+#  13    3   cutoffpl   PhoIndex            1.76208      = p3
+#  14    3   cutoffpl   HighECut   keV      4.27433      = p4
+#  15    3   cutoffpl   norm                7.32250E-03  = p5
+#                           Data group: 4
+#  16    1   phabs      nH         10^22    0.312371     = p1
+#  17    2   constant   factor              1.14452      +/-  3.04715E-02  
+#  18    3   cutoffpl   PhoIndex            1.76208      = p3
+#  19    3   cutoffpl   HighECut   keV      4.27433      = p4
+#  20    3   cutoffpl   norm                7.32250E-03  = p5
+#                           Data group: 5
+#  21    1   phabs      nH         10^22    0.312371     = p1
+#  22    2   constant   factor              1.07644      +/-  2.86689E-02  
+#  23    3   cutoffpl   PhoIndex            1.76208      = p3
+#  24    3   cutoffpl   HighECut   keV      4.27433      = p4
+#  25    3   cutoffpl   norm                7.32250E-03  = p5
+#________________________________________________________________________
+#
+#
+!XSPEC12> error 1 3 4
+# Parameter   Confidence Range (2.706)
+#     1     0.287655     0.338232    (-0.0247563,0.0258199)
+#     3      1.66405       1.8603    (-0.0981963,0.0980517)
+#     4      3.99316      4.59627    (-0.281691,0.321426)
+#
+!XSPEC12> log none
+#

@@ -1,0 +1,155 @@
+#XSPEC version: 12.15.0d
+#Build Date/Time: Thu Sep 25 14:31:39 2025
+#
+!XSPEC12> show data
+#
+#5 files 5 spectra 
+#Spectrum 1  Spectral Data File: sw00031042002xpcw3posr_grp.pha
+#Net count rate (cts/s) for Spectrum:1  4.076e-01 +/- 4.561e-03
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  2-197
+#  Telescope: SWIFT Instrument: XRT  Channel Type: PI
+#  Exposure Time: 1.959e+04 sec
+# Using fit statistic: chi
+# Using Response (RMF) File            /home/shreya/IUCAA/caldb/data/swift/xrt/cpf/rmf/swxpc0to12s6_20110101v014.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/shreya/IUCAA/Swift/products/sw00031042002xpcw3posr.arf
+#
+#Spectrum 2  Spectral Data File: nu50310002001A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:2  1.359e-01 +/- 1.197e-03 (92.2 % total)
+# Assigned to Data Group 2 and Plot Group 2
+#  Noticed Channels:  35-227
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.055e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001A01_bk.pha
+#  Background Exposure Time: 1.055e+05 sec
+# Using Response (RMF) File            nu50310002001A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001A01_sr.arf
+#
+#Spectrum 3  Spectral Data File: nu50310002001B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:3  1.397e-01 +/- 1.209e-03 (92.9 % total)
+# Assigned to Data Group 3 and Plot Group 3
+#  Noticed Channels:  34-228
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.052e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001B01_bk.pha
+#  Background Exposure Time: 1.052e+05 sec
+# Using Response (RMF) File            nu50310002001B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001B01_sr.arf
+#
+#Spectrum 4  Spectral Data File: nu50310002003A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:4  1.225e-01 +/- 1.150e-03 (93.0 % total)
+# Assigned to Data Group 4 and Plot Group 4
+#  Noticed Channels:  32-210
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.018e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003A01_bk.pha
+#  Background Exposure Time: 1.018e+05 sec
+# Using Response (RMF) File            nu50310002003A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003A01_sr.arf
+#
+#Spectrum 5  Spectral Data File: nu50310002003B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:5  1.217e-01 +/- 1.149e-03 (92.8 % total)
+# Assigned to Data Group 5 and Plot Group 5
+#  Noticed Channels:  34-207
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.015e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003B01_bk.pha
+#  Background Exposure Time: 1.015e+05 sec
+# Using Response (RMF) File            nu50310002003B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003B01_sr.arf
+#
+#
+!XSPEC12> show parameters
+#
+#Parameters defined:
+#========================================================================
+#Model phabs<1>*constant<2>(diskbb<3> + cutoffpl<4>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   phabs      nH         10^22    0.113649     +/-  2.25706E-02  
+#   2    2   constant   factor              1.00000      frozen
+#   3    3   diskbb     Tin        keV      1.08115      +/-  2.24128E-02  
+#   4    3   diskbb     norm                0.451046     +/-  6.30631E-02  
+#   5    4   cutoffpl   PhoIndex            1.06341      +/-  0.372707     
+#   6    4   cutoffpl   HighECut   keV      5.43996      +/-  0.975518     
+#   7    4   cutoffpl   norm                9.55919E-04  +/-  5.14613E-04  
+#                           Data group: 2
+#   8    1   phabs      nH         10^22    0.113649     = p1
+#   9    2   constant   factor              0.948671     +/-  2.38911E-02  
+#  10    3   diskbb     Tin        keV      1.08115      = p3
+#  11    3   diskbb     norm                0.451046     = p4
+#  12    4   cutoffpl   PhoIndex            1.06341      = p5
+#  13    4   cutoffpl   HighECut   keV      5.43996      = p6
+#  14    4   cutoffpl   norm                9.55919E-04  = p7
+#                           Data group: 3
+#  15    1   phabs      nH         10^22    0.113649     = p1
+#  16    2   constant   factor              0.949085     +/-  2.38136E-02  
+#  17    3   diskbb     Tin        keV      1.08115      = p3
+#  18    3   diskbb     norm                0.451046     = p4
+#  19    4   cutoffpl   PhoIndex            1.06341      = p5
+#  20    4   cutoffpl   HighECut   keV      5.43996      = p6
+#  21    4   cutoffpl   norm                9.55919E-04  = p7
+#                           Data group: 4
+#  22    1   phabs      nH         10^22    0.113649     = p1
+#  23    2   constant   factor              0.940858     +/-  2.38975E-02  
+#  24    3   diskbb     Tin        keV      1.08115      = p3
+#  25    3   diskbb     norm                0.451046     = p4
+#  26    4   cutoffpl   PhoIndex            1.06341      = p5
+#  27    4   cutoffpl   HighECut   keV      5.43996      = p6
+#  28    4   cutoffpl   norm                9.55919E-04  = p7
+#                           Data group: 5
+#  29    1   phabs      nH         10^22    0.113649     = p1
+#  30    2   constant   factor              0.886171     +/-  2.24873E-02  
+#  31    3   diskbb     Tin        keV      1.08115      = p3
+#  32    3   diskbb     norm                0.451046     = p4
+#  33    4   cutoffpl   PhoIndex            1.06341      = p5
+#  34    4   cutoffpl   HighECut   keV      5.43996      = p6
+#  35    4   cutoffpl   norm                9.55919E-04  = p7
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : Chi-Squared                  205.62     using 196 bins, spectrum 1, group 1.
+#                 Chi-Squared                  191.94     using 193 bins, spectrum 2, group 2.
+#                 Chi-Squared                  263.82     using 195 bins, spectrum 3, group 3.
+#                 Chi-Squared                  171.18     using 179 bins, spectrum 4, group 4.
+#                 Chi-Squared                  176.52     using 174 bins, spectrum 5, group 5.
+#Total fit statistic                          1009.08     with 927 d.o.f.
+#
+#Test statistic : Chi-Squared                 1009.08     using 937 bins.
+# Null hypothesis probability of 3.09e-02 with 927 degrees of freedom
+#
+!XSPEC12> show plot
+# Plot settings:
+#   Showing of individual additive components is OFF.
+#   Showing of background spectra is OFF.
+#   Effective area normalization is OFF.
+#   Current unit settings:
+#      Energy     = keV
+#      Wavelength = angstrom, with Y-Axis displayed per Hz
+#   X-Axis data display mode: Energy
+#   Spectra plots will be shifted to source frame by redshift value z: 0
+#   Device: /xw
+#   Plotting of line IDs is OFF.
+#   Splashpage is ON.
+#   xlog for data plots is ON.
+#   ylog for data plots is OFF.
+#
+#   Default plot rebin settings for all plot groups:
+#   Min. Signif.   Max. # Bins   Error Type
+#        0.00000             1         quad
+#
+!XSPEC12> error 3 5 6
+# Parameter   Confidence Range (2.706)
+#     3      1.04367      1.12045    (-0.0374823,0.0392988)
+#     5     0.336118      1.48398    (-0.727423,0.420437)
+#     6      4.10255      7.07408    (-1.33774,1.63378)
+#
+!XSPEC12> log none
+#

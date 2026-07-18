@@ -1,0 +1,130 @@
+#XSPEC version: 12.15.0d
+#Build Date/Time: Thu Sep 25 14:31:39 2025
+#
+!XSPEC12> show data
+#
+#5 files 5 spectra 
+#Spectrum 1  Spectral Data File: sw00031042002xpcw3posr_grp.pha
+#Net count rate (cts/s) for Spectrum:1  4.076e-01 +/- 4.561e-03
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  2-197
+#  Telescope: SWIFT Instrument: XRT  Channel Type: PI
+#  Exposure Time: 1.959e+04 sec
+# Using fit statistic: chi
+# Using Response (RMF) File            /home/shreya/IUCAA/caldb/data/swift/xrt/cpf/rmf/swxpc0to12s6_20110101v014.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/shreya/IUCAA/Swift/products/sw00031042002xpcw3posr.arf
+#
+#Spectrum 2  Spectral Data File: nu50310002001A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:2  1.359e-01 +/- 1.197e-03 (92.2 % total)
+# Assigned to Data Group 2 and Plot Group 2
+#  Noticed Channels:  35-227
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.055e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001A01_bk.pha
+#  Background Exposure Time: 1.055e+05 sec
+# Using Response (RMF) File            nu50310002001A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001A01_sr.arf
+#
+#Spectrum 3  Spectral Data File: nu50310002001B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:3  1.397e-01 +/- 1.209e-03 (92.9 % total)
+# Assigned to Data Group 3 and Plot Group 3
+#  Noticed Channels:  34-228
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.052e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001B01_bk.pha
+#  Background Exposure Time: 1.052e+05 sec
+# Using Response (RMF) File            nu50310002001B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001B01_sr.arf
+#
+#Spectrum 4  Spectral Data File: nu50310002003A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:4  1.225e-01 +/- 1.150e-03 (93.0 % total)
+# Assigned to Data Group 4 and Plot Group 4
+#  Noticed Channels:  32-210
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.018e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003A01_bk.pha
+#  Background Exposure Time: 1.018e+05 sec
+# Using Response (RMF) File            nu50310002003A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003A01_sr.arf
+#
+#Spectrum 5  Spectral Data File: nu50310002003B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:5  1.217e-01 +/- 1.149e-03 (92.8 % total)
+# Assigned to Data Group 5 and Plot Group 5
+#  Noticed Channels:  34-207
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.015e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003B01_bk.pha
+#  Background Exposure Time: 1.015e+05 sec
+# Using Response (RMF) File            nu50310002003B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003B01_sr.arf
+#
+#
+!XSPEC12> show parameters
+#
+#Parameters defined:
+#========================================================================
+#Model phabs<1>*constant<2>(diskbb<3> + powerlaw<4>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   phabs      nH         10^22    0.264454     +/-  1.88161E-02  
+#   2    2   constant   factor              1.00000      frozen
+#   3    3   diskbb     Tin        keV      1.26940      +/-  1.30466E-02  
+#   4    3   diskbb     norm                0.211882     +/-  1.32300E-02  
+#   5    4   powerlaw   PhoIndex            2.47699      +/-  5.11859E-02  
+#   6    4   powerlaw   norm                2.99661E-03  +/-  3.40429E-04  
+#                           Data group: 2
+#   7    1   phabs      nH         10^22    0.264454     = p1
+#   8    2   constant   factor              0.959191     +/-  2.39648E-02  
+#   9    3   diskbb     Tin        keV      1.26940      = p3
+#  10    3   diskbb     norm                0.211882     = p4
+#  11    4   powerlaw   PhoIndex            2.47699      = p5
+#  12    4   powerlaw   norm                2.99661E-03  = p6
+#                           Data group: 3
+#  13    1   phabs      nH         10^22    0.264454     = p1
+#  14    2   constant   factor              0.959764     +/-  2.38756E-02  
+#  15    3   diskbb     Tin        keV      1.26940      = p3
+#  16    3   diskbb     norm                0.211882     = p4
+#  17    4   powerlaw   PhoIndex            2.47699      = p5
+#  18    4   powerlaw   norm                2.99661E-03  = p6
+#                           Data group: 4
+#  19    1   phabs      nH         10^22    0.264454     = p1
+#  20    2   constant   factor              0.952344     +/-  2.39684E-02  
+#  21    3   diskbb     Tin        keV      1.26940      = p3
+#  22    3   diskbb     norm                0.211882     = p4
+#  23    4   powerlaw   PhoIndex            2.47699      = p5
+#  24    4   powerlaw   norm                2.99661E-03  = p6
+#                           Data group: 5
+#  25    1   phabs      nH         10^22    0.264454     = p1
+#  26    2   constant   factor              0.896937     +/-  2.25780E-02  
+#  27    3   diskbb     Tin        keV      1.26940      = p3
+#  28    3   diskbb     norm                0.211882     = p4
+#  29    4   powerlaw   PhoIndex            2.47699      = p5
+#  30    4   powerlaw   norm                2.99661E-03  = p6
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : Chi-Squared                  225.13     using 196 bins, spectrum 1, group 1.
+#                 Chi-Squared                  208.93     using 193 bins, spectrum 2, group 2.
+#                 Chi-Squared                  282.20     using 195 bins, spectrum 3, group 3.
+#                 Chi-Squared                  177.80     using 179 bins, spectrum 4, group 4.
+#                 Chi-Squared                  185.52     using 174 bins, spectrum 5, group 5.
+#Total fit statistic                          1079.58     with 928 d.o.f.
+#
+#Test statistic : Chi-Squared                 1079.58     using 937 bins.
+# Null hypothesis probability of 3.92e-04 with 928 degrees of freedom
+#
+!XSPEC12> error 3 4 5
+# Parameter   Confidence Range (2.706)
+#     3       1.2469      1.29204    (-0.0224588,0.0226812)
+#     4      0.19167     0.233114    (-0.0203105,0.0211333)
+#     5      2.39632      2.54985    (-0.080175,0.0733549)
+#
+!XSPEC12> log none
+#
