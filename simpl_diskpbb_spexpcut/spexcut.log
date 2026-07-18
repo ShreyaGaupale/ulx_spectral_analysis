@@ -1,0 +1,154 @@
+#XSPEC version: 12.15.0d
+#Build Date/Time: Thu Sep 25 14:31:39 2025
+#
+!XSPEC12> show data
+#
+#5 files 5 spectra 
+#Spectrum 1  Spectral Data File: sw00031042002xpcw3posr_grp.pha
+#Net count rate (cts/s) for Spectrum:1  4.076e-01 +/- 4.561e-03
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  2-197
+#  Telescope: SWIFT Instrument: XRT  Channel Type: PI
+#  Exposure Time: 1.959e+04 sec
+# Using fit statistic: chi
+# Using Response (RMF) File            /home/shreya/IUCAA/caldb/data/swift/xrt/cpf/rmf/swxpc0to12s6_20110101v014.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/shreya/IUCAA/Swift/products/sw00031042002xpcw3posr.arf
+#
+#Spectrum 2  Spectral Data File: nu50310002001A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:2  1.359e-01 +/- 1.197e-03 (92.2 % total)
+# Assigned to Data Group 2 and Plot Group 2
+#  Noticed Channels:  35-227
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.055e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001A01_bk.pha
+#  Background Exposure Time: 1.055e+05 sec
+# Using Response (RMF) File            nu50310002001A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001A01_sr.arf
+#
+#Spectrum 3  Spectral Data File: nu50310002001B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:3  1.397e-01 +/- 1.209e-03 (92.9 % total)
+# Assigned to Data Group 3 and Plot Group 3
+#  Noticed Channels:  34-228
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.052e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001B01_bk.pha
+#  Background Exposure Time: 1.052e+05 sec
+# Using Response (RMF) File            nu50310002001B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001B01_sr.arf
+#
+#Spectrum 4  Spectral Data File: nu50310002003A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:4  1.225e-01 +/- 1.150e-03 (93.0 % total)
+# Assigned to Data Group 4 and Plot Group 4
+#  Noticed Channels:  32-210
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.018e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003A01_bk.pha
+#  Background Exposure Time: 1.018e+05 sec
+# Using Response (RMF) File            nu50310002003A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003A01_sr.arf
+#
+#Spectrum 5  Spectral Data File: nu50310002003B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:5  1.217e-01 +/- 1.149e-03 (92.8 % total)
+# Assigned to Data Group 5 and Plot Group 5
+#  Noticed Channels:  34-207
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.015e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003B01_bk.pha
+#  Background Exposure Time: 1.015e+05 sec
+# Using Response (RMF) File            nu50310002003B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003B01_sr.arf
+#
+#
+!XSPEC12> show parameters
+#
+#Parameters defined:
+#========================================================================
+#Model phabs<1>*constant<2>(simpl<3>*diskpbb<4>)spexpcut<5> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   phabs      nH         10^22    0.110000     frozen
+#   2    2   constant   factor              1.00000      frozen
+#   3    3   simpl      Gamma               1.73817      +/-  0.304033     
+#   4    3   simpl      FracSctr            0.411871     +/-  4.54276E-02  
+#   5    3   simpl      UpScOnly            1.00000      frozen
+#   6    4   diskpbb    Tin        keV      1.17202      +/-  6.72159E-02  
+#   7    4   diskpbb    p                   0.748775     +/-  1.83502E-02  
+#   8    4   diskpbb    norm                0.587839     +/-  0.127759     
+#   9    5   spexpcut   Ecut       keV      7.15252      +/-  1.30837      
+#  10    5   spexpcut   alpha               1.00000      frozen
+#                           Data group: 2
+#  11    1   phabs      nH         10^22    0.110000     = p1
+#  12    2   constant   factor              1.37405      +/-  0.126761     
+#  13    3   simpl      Gamma               1.73817      = p3
+#  14    3   simpl      FracSctr            0.411871     = p4
+#  15    3   simpl      UpScOnly            1.00000      = p5
+#  16    4   diskpbb    Tin        keV      1.17202      = p6
+#  17    4   diskpbb    p                   0.748775     = p7
+#  18    4   diskpbb    norm                0.587839     = p8
+#  19    5   spexpcut   Ecut       keV      7.15252      = p9
+#  20    5   spexpcut   alpha               1.00000      = p10
+#                           Data group: 3
+#  21    1   phabs      nH         10^22    0.110000     = p1
+#  22    2   constant   factor              1.37464      +/-  0.126757     
+#  23    3   simpl      Gamma               1.73817      = p3
+#  24    3   simpl      FracSctr            0.411871     = p4
+#  25    3   simpl      UpScOnly            1.00000      = p5
+#  26    4   diskpbb    Tin        keV      1.17202      = p6
+#  27    4   diskpbb    p                   0.748775     = p7
+#  28    4   diskpbb    norm                0.587839     = p8
+#  29    5   spexpcut   Ecut       keV      7.15252      = p9
+#  30    5   spexpcut   alpha               1.00000      = p10
+#                           Data group: 4
+#  31    1   phabs      nH         10^22    0.110000     = p1
+#  32    2   constant   factor              1.36274      +/-  0.125752     
+#  33    3   simpl      Gamma               1.73817      = p3
+#  34    3   simpl      FracSctr            0.411871     = p4
+#  35    3   simpl      UpScOnly            1.00000      = p5
+#  36    4   diskpbb    Tin        keV      1.17202      = p6
+#  37    4   diskpbb    p                   0.748775     = p7
+#  38    4   diskpbb    norm                0.587839     = p8
+#  39    5   spexpcut   Ecut       keV      7.15252      = p9
+#  40    5   spexpcut   alpha               1.00000      = p10
+#                           Data group: 5
+#  41    1   phabs      nH         10^22    0.110000     = p1
+#  42    2   constant   factor              1.28343      +/-  0.118382     
+#  43    3   simpl      Gamma               1.73817      = p3
+#  44    3   simpl      FracSctr            0.411871     = p4
+#  45    3   simpl      UpScOnly            1.00000      = p5
+#  46    4   diskpbb    Tin        keV      1.17202      = p6
+#  47    4   diskpbb    p                   0.748775     = p7
+#  48    4   diskpbb    norm                0.587839     = p8
+#  49    5   spexpcut   Ecut       keV      7.15252      = p9
+#  50    5   spexpcut   alpha               1.00000      = p10
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : Chi-Squared                  206.89     using 196 bins, spectrum 1, group 1.
+#                 Chi-Squared                  192.29     using 193 bins, spectrum 2, group 2.
+#                 Chi-Squared                  264.10     using 195 bins, spectrum 3, group 3.
+#                 Chi-Squared                  171.42     using 179 bins, spectrum 4, group 4.
+#                 Chi-Squared                  177.40     using 174 bins, spectrum 5, group 5.
+#Total fit statistic                          1012.09     with 927 d.o.f.
+#
+#Test statistic : Chi-Squared                 1012.09     using 937 bins.
+# Null hypothesis probability of 2.65e-02 with 927 degrees of freedom
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model phabs<1>*constant<2>(simpl<3>*diskpbb<4>)spexpcut<5> Source No.: 1   Active/On
+#      For Data Group(s): 1 2 3 4 5 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> log none
+#
