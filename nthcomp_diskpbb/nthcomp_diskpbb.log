@@ -1,0 +1,216 @@
+#XSPEC version: 12.15.0d
+#Build Date/Time: Thu Sep 25 14:31:39 2025
+#
+!XSPEC12> show data
+#
+#5 files 5 spectra 
+#Spectrum 1  Spectral Data File: sw00031042002xpcw3posr_grp.pha
+#Net count rate (cts/s) for Spectrum:1  4.076e-01 +/- 4.561e-03
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  2-197
+#  Telescope: SWIFT Instrument: XRT  Channel Type: PI
+#  Exposure Time: 1.959e+04 sec
+# Using fit statistic: chi
+# Using Response (RMF) File            /home/shreya/IUCAA/caldb/data/swift/xrt/cpf/rmf/swxpc0to12s6_20110101v014.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/shreya/IUCAA/Swift/products/sw00031042002xpcw3posr.arf
+#
+#Spectrum 2  Spectral Data File: nu50310002001A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:2  1.359e-01 +/- 1.197e-03 (92.2 % total)
+# Assigned to Data Group 2 and Plot Group 2
+#  Noticed Channels:  35-227
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.055e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001A01_bk.pha
+#  Background Exposure Time: 1.055e+05 sec
+# Using Response (RMF) File            nu50310002001A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001A01_sr.arf
+#
+#Spectrum 3  Spectral Data File: nu50310002001B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:3  1.397e-01 +/- 1.209e-03 (92.9 % total)
+# Assigned to Data Group 3 and Plot Group 3
+#  Noticed Channels:  34-228
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.052e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001B01_bk.pha
+#  Background Exposure Time: 1.052e+05 sec
+# Using Response (RMF) File            nu50310002001B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001B01_sr.arf
+#
+#Spectrum 4  Spectral Data File: nu50310002003A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:4  1.225e-01 +/- 1.150e-03 (93.0 % total)
+# Assigned to Data Group 4 and Plot Group 4
+#  Noticed Channels:  32-210
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.018e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003A01_bk.pha
+#  Background Exposure Time: 1.018e+05 sec
+# Using Response (RMF) File            nu50310002003A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003A01_sr.arf
+#
+#Spectrum 5  Spectral Data File: nu50310002003B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:5  1.217e-01 +/- 1.149e-03 (92.8 % total)
+# Assigned to Data Group 5 and Plot Group 5
+#  Noticed Channels:  34-207
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.015e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003B01_bk.pha
+#  Background Exposure Time: 1.015e+05 sec
+# Using Response (RMF) File            nu50310002003B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003B01_sr.arf
+#
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model phabs<1>*constant<2>(diskpbb<3> + nthComp<4>) Source No.: 1   Active/On
+#      For Data Group(s): 1 2 3 4 5 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> show parameters
+#
+#Parameters defined:
+#========================================================================
+#Model phabs<1>*constant<2>(diskpbb<3> + nthComp<4>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   phabs      nH         10^22    0.110000     frozen
+#   2    2   constant   factor              1.00000      frozen
+#   3    3   diskpbb    Tin        keV      0.970947     +/-  6.92521E-02  
+#   4    3   diskpbb    p                   0.760348     +/-  7.95662E-02  
+#   5    3   diskpbb    norm                0.334166     +/-  0.121894     
+#   6    4   nthComp    Gamma               3.23973      +/-  0.681625     
+#   7    4   nthComp    kT_e       keV      17.5306      +/-  57.3107      
+#   8    4   nthComp    kT_bb      keV      0.970947     = p3
+#   9    4   nthComp    inp_type   0/1      1.00000      frozen
+#  10    4   nthComp    Redshift            0.0          frozen
+#  11    4   nthComp    norm                1.93124E-03  +/-  9.55161E-04  
+#                           Data group: 2
+#  12    1   phabs      nH         10^22    0.110000     = p1
+#  13    2   constant   factor              0.963554     +/-  2.45502E-02  
+#  14    3   diskpbb    Tin        keV      0.970947     = p3
+#  15    3   diskpbb    p                   0.760348     = p4
+#  16    3   diskpbb    norm                0.334166     = p5
+#  17    4   nthComp    Gamma               3.23973      = p6
+#  18    4   nthComp    kT_e       keV      17.5306      = p7
+#  19    4   nthComp    kT_bb      keV      0.970947     = p8
+#  20    4   nthComp    inp_type   0/1      1.00000      = p9
+#  21    4   nthComp    Redshift            0.0          = p10
+#  22    4   nthComp    norm                1.93124E-03  = p11
+#                           Data group: 3
+#  23    1   phabs      nH         10^22    0.110000     = p1
+#  24    2   constant   factor              0.964199     +/-  2.44857E-02  
+#  25    3   diskpbb    Tin        keV      0.970947     = p3
+#  26    3   diskpbb    p                   0.760348     = p4
+#  27    3   diskpbb    norm                0.334166     = p5
+#  28    4   nthComp    Gamma               3.23973      = p6
+#  29    4   nthComp    kT_e       keV      17.5306      = p7
+#  30    4   nthComp    kT_bb      keV      0.970947     = p8
+#  31    4   nthComp    inp_type   0/1      1.00000      = p9
+#  32    4   nthComp    Redshift            0.0          = p10
+#  33    4   nthComp    norm                1.93124E-03  = p11
+#                           Data group: 4
+#  34    1   phabs      nH         10^22    0.110000     = p1
+#  35    2   constant   factor              0.955973     +/-  2.45805E-02  
+#  36    3   diskpbb    Tin        keV      0.970947     = p3
+#  37    3   diskpbb    p                   0.760348     = p4
+#  38    3   diskpbb    norm                0.334166     = p5
+#  39    4   nthComp    Gamma               3.23973      = p6
+#  40    4   nthComp    kT_e       keV      17.5306      = p7
+#  41    4   nthComp    kT_bb      keV      0.970947     = p8
+#  42    4   nthComp    inp_type   0/1      1.00000      = p9
+#  43    4   nthComp    Redshift            0.0          = p10
+#  44    4   nthComp    norm                1.93124E-03  = p11
+#                           Data group: 5
+#  45    1   phabs      nH         10^22    0.110000     = p1
+#  46    2   constant   factor              0.900014     +/-  2.30929E-02  
+#  47    3   diskpbb    Tin        keV      0.970947     = p3
+#  48    3   diskpbb    p                   0.760348     = p4
+#  49    3   diskpbb    norm                0.334166     = p5
+#  50    4   nthComp    Gamma               3.23973      = p6
+#  51    4   nthComp    kT_e       keV      17.5306      = p7
+#  52    4   nthComp    kT_bb      keV      0.970947     = p8
+#  53    4   nthComp    inp_type   0/1      1.00000      = p9
+#  54    4   nthComp    Redshift            0.0          = p10
+#  55    4   nthComp    norm                1.93124E-03  = p11
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : Chi-Squared                  207.50     using 196 bins, spectrum 1, group 1.
+#                 Chi-Squared                  191.74     using 193 bins, spectrum 2, group 2.
+#                 Chi-Squared                  260.64     using 195 bins, spectrum 3, group 3.
+#                 Chi-Squared                  167.93     using 179 bins, spectrum 4, group 4.
+#                 Chi-Squared                  177.56     using 174 bins, spectrum 5, group 5.
+#Total fit statistic                          1005.36     with 927 d.o.f.
+#
+#Test statistic : Chi-Squared                 1005.36     using 937 bins.
+# Null hypothesis probability of 3.70e-02 with 927 degrees of freedom
+#
+!XSPEC12> steppar 7 10 500 50
+#
+#     Chi-Squared    Delta             kT_e
+#                 Chi-Squared             7
+#
+#          1005.4    0.046872    0          10
+#          1005.4  -0.0015189    1        19.8
+#          1005.4    0.012405    2        29.6
+#          1005.4    0.024194    3        39.4
+#          1005.4    0.033316    4        49.2
+#          1005.4    0.040024    5          59
+#          1005.4    0.045002    6        68.8
+#          1005.4    0.048335    7        78.6
+#          1005.4    0.051066    8        88.4
+#          1005.4    0.052935    9        98.2
+#          1005.4    0.054941   10         108
+#          1005.4     0.05639   11       117.8
+#          1005.4     0.05793   12       127.6
+#          1005.4    0.058952   13       137.4
+#          1005.4    0.060794   14       147.2
+#          1005.4    0.061228   15         157
+#          1005.4    0.062074   16       166.8
+#          1005.4    0.062811   17       176.6
+#          1005.4    0.062747   18       186.4
+#          1005.4    0.063299   19       196.2
+#          1005.4    0.063754   20         206
+#          1005.4    0.064162   21       215.8
+#          1005.4    0.064628   22       225.6
+#          1005.4    0.065035   23       235.4
+#          1005.4    0.065772   24       245.2
+#          1005.4    0.066079   25         255
+#          1005.4    0.065904   26       264.8
+#          1005.4    0.066311   27       274.6
+#          1005.4     0.06676   28       284.4
+#          1005.4    0.066583   29       294.2
+#          1005.4    0.067282   30         304
+#          1005.4    0.067336   31       313.8
+#          1005.4    0.067551   32       323.6
+#          1005.4    0.067906   33       333.4
+#          1005.4    0.067985   34       343.2
+#          1005.4    0.068092   35         353
+#          1005.4    0.068478   36       362.8
+#          1005.4    0.068152   37       372.6
+#          1005.4    0.068538   38       382.4
+#          1005.4    0.068569   39       392.2
+#          1005.4    0.068742   40         402
+#          1005.4    0.068981   41       411.8
+#          1005.4    0.069125   42       421.6
+#          1005.4    0.069022   43       431.4
+#          1005.4    0.069309   44       441.2
+#          1005.4    0.069539   45         451
+#          1005.4     0.06952   46       460.8
+#          1005.4    0.069551   47       470.6
+#          1005.4    0.069817   48       480.4
+#          1005.4    0.069885   49       490.2
+#          1005.4    0.070008   50         500
+#
+!XSPEC12> log none
+#
