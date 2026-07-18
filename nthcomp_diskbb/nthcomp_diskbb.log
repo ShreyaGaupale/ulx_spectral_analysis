@@ -1,0 +1,249 @@
+#XSPEC version: 12.15.0d
+#Build Date/Time: Thu Sep 25 14:31:39 2025
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model phabs<1>*constant<2>(diskbb<3> + nthComp<4>) Source No.: 1   Active/On
+#      For Data Group(s): 1 2 3 4 5 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> show data
+#
+#5 files 5 spectra 
+#Spectrum 1  Spectral Data File: sw00031042002xpcw3posr_grp.pha
+#Net count rate (cts/s) for Spectrum:1  4.076e-01 +/- 4.561e-03
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  2-197
+#  Telescope: SWIFT Instrument: XRT  Channel Type: PI
+#  Exposure Time: 1.959e+04 sec
+# Using fit statistic: chi
+# Using Response (RMF) File            /home/shreya/IUCAA/caldb/data/swift/xrt/cpf/rmf/swxpc0to12s6_20110101v014.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/shreya/IUCAA/Swift/products/sw00031042002xpcw3posr.arf
+#
+#Spectrum 2  Spectral Data File: nu50310002001A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:2  1.359e-01 +/- 1.197e-03 (92.2 % total)
+# Assigned to Data Group 2 and Plot Group 2
+#  Noticed Channels:  35-227
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.055e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001A01_bk.pha
+#  Background Exposure Time: 1.055e+05 sec
+# Using Response (RMF) File            nu50310002001A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001A01_sr.arf
+#
+#Spectrum 3  Spectral Data File: nu50310002001B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:3  1.397e-01 +/- 1.209e-03 (92.9 % total)
+# Assigned to Data Group 3 and Plot Group 3
+#  Noticed Channels:  34-228
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.052e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002001B01_bk.pha
+#  Background Exposure Time: 1.052e+05 sec
+# Using Response (RMF) File            nu50310002001B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002001B01_sr.arf
+#
+#Spectrum 4  Spectral Data File: nu50310002003A01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:4  1.225e-01 +/- 1.150e-03 (93.0 % total)
+# Assigned to Data Group 4 and Plot Group 4
+#  Noticed Channels:  32-210
+#  Telescope: NuSTAR Instrument: FPMA  Channel Type: PI
+#  Exposure Time: 1.018e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003A01_bk.pha
+#  Background Exposure Time: 1.018e+05 sec
+# Using Response (RMF) File            nu50310002003A01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003A01_sr.arf
+#
+#Spectrum 5  Spectral Data File: nu50310002003B01_sr_grp.pha
+#Net count rate (cts/s) for Spectrum:5  1.217e-01 +/- 1.149e-03 (92.8 % total)
+# Assigned to Data Group 5 and Plot Group 5
+#  Noticed Channels:  34-207
+#  Telescope: NuSTAR Instrument: FPMB  Channel Type: PI
+#  Exposure Time: 1.015e+05 sec
+# Using fit statistic: chi
+# Using Background File                nu50310002003B01_bk.pha
+#  Background Exposure Time: 1.015e+05 sec
+# Using Response (RMF) File            nu50310002003B01_sr.rmf for Source 1
+# Using Auxiliary Response (ARF) File  nu50310002003B01_sr.arf
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : Chi-Squared                  207.24     using 196 bins, spectrum 1, group 1.
+#                 Chi-Squared                  191.75     using 193 bins, spectrum 2, group 2.
+#                 Chi-Squared                  260.80     using 195 bins, spectrum 3, group 3.
+#                 Chi-Squared                  168.10     using 179 bins, spectrum 4, group 4.
+#                 Chi-Squared                  177.48     using 174 bins, spectrum 5, group 5.
+#Total fit statistic                          1005.37     with 928 d.o.f.
+#
+#Test statistic : Chi-Squared                 1005.37     using 937 bins.
+# Null hypothesis probability of 3.89e-02 with 928 degrees of freedom
+#
+!XSPEC12> show parameters
+#
+#Parameters defined:
+#========================================================================
+#Model phabs<1>*constant<2>(diskbb<3> + nthComp<4>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#                           Data group: 1
+#   1    1   phabs      nH         10^22    0.110000     frozen
+#   2    2   constant   factor              1.00000      frozen
+#   3    3   diskbb     Tin        keV      0.979898     +/-  3.14001E-02  
+#   4    3   diskbb     norm                0.340653     +/-  0.108590     
+#   5    4   nthComp    Gamma               3.17017      +/-  0.484614     
+#   6    4   nthComp    kT_e       keV      13.0224      +/-  26.1029      
+#   7    4   nthComp    kT_bb      keV      0.979898     = p3
+#   8    4   nthComp    inp_type   0/1      1.00000      frozen
+#   9    4   nthComp    Redshift            0.0          frozen
+#  10    4   nthComp    norm                1.81851E-03  +/-  5.34971E-04  
+#                           Data group: 2
+#  11    1   phabs      nH         10^22    0.110000     = p1
+#  12    2   constant   factor              0.962772     +/-  2.40234E-02  
+#  13    3   diskbb     Tin        keV      0.979898     = p3
+#  14    3   diskbb     norm                0.340653     = p4
+#  15    4   nthComp    Gamma               3.17017      = p5
+#  16    4   nthComp    kT_e       keV      13.0224      = p6
+#  17    4   nthComp    kT_bb      keV      0.979898     = p7
+#  18    4   nthComp    inp_type   0/1      1.00000      = p8
+#  19    4   nthComp    Redshift            0.0          = p9
+#  20    4   nthComp    norm                1.81851E-03  = p10
+#                           Data group: 3
+#  21    1   phabs      nH         10^22    0.110000     = p1
+#  22    2   constant   factor              0.963408     +/-  2.39506E-02  
+#  23    3   diskbb     Tin        keV      0.979898     = p3
+#  24    3   diskbb     norm                0.340653     = p4
+#  25    4   nthComp    Gamma               3.17017      = p5
+#  26    4   nthComp    kT_e       keV      13.0224      = p6
+#  27    4   nthComp    kT_bb      keV      0.979898     = p7
+#  28    4   nthComp    inp_type   0/1      1.00000      = p8
+#  29    4   nthComp    Redshift            0.0          = p9
+#  30    4   nthComp    norm                1.81851E-03  = p10
+#                           Data group: 4
+#  31    1   phabs      nH         10^22    0.110000     = p1
+#  32    2   constant   factor              0.955178     +/-  2.40476E-02  
+#  33    3   diskbb     Tin        keV      0.979898     = p3
+#  34    3   diskbb     norm                0.340653     = p4
+#  35    4   nthComp    Gamma               3.17017      = p5
+#  36    4   nthComp    kT_e       keV      13.0224      = p6
+#  37    4   nthComp    kT_bb      keV      0.979898     = p7
+#  38    4   nthComp    inp_type   0/1      1.00000      = p8
+#  39    4   nthComp    Redshift            0.0          = p9
+#  40    4   nthComp    norm                1.81851E-03  = p10
+#                           Data group: 5
+#  41    1   phabs      nH         10^22    0.110000     = p1
+#  42    2   constant   factor              0.899289     +/-  2.26092E-02  
+#  43    3   diskbb     Tin        keV      0.979898     = p3
+#  44    3   diskbb     norm                0.340653     = p4
+#  45    4   nthComp    Gamma               3.17017      = p5
+#  46    4   nthComp    kT_e       keV      13.0224      = p6
+#  47    4   nthComp    kT_bb      keV      0.979898     = p7
+#  48    4   nthComp    inp_type   0/1      1.00000      = p8
+#  49    4   nthComp    Redshift            0.0          = p9
+#  50    4   nthComp    norm                1.81851E-03  = p10
+#________________________________________________________________________
+#
+#
+!XSPEC12> steppar 6 2 100 88
+#
+#     Chi-Squared    Delta             kT_e
+#                 Chi-Squared             6
+#
+#          1083.5      78.153    0           2
+#          1014.4      9.0031    1      3.1136
+#          1007.9      2.5762    2      4.2273
+#          1006.3     0.95383    3      5.3409
+#          1005.8     0.40313    4      6.4545
+#          1005.6     0.18279    5      7.5682
+#          1005.5    0.082369    6      8.6818
+#          1005.4    0.034957    7      9.7955
+#          1005.4    0.012208    8      10.909
+#          1005.4   0.0024434    9      12.023
+#          1005.4 -0.00011103   10      13.136
+#          1005.4   0.0013086   11       14.25
+#          1005.4   0.0051069   12      15.364
+#          1005.4   0.0094516   13      16.477
+#          1005.4    0.015244   14      17.591
+#          1005.4    0.021193   15      18.705
+#          1005.4    0.027008   16      19.818
+#          1005.4    0.033041   17      20.932
+#          1005.4    0.038371   18      22.045
+#          1005.4    0.043887   19      23.159
+#          1005.4    0.049249   20      24.273
+#          1005.4    0.053654   21      25.386
+#          1005.4    0.058147   22        26.5
+#          1005.4    0.062341   23      27.614
+#          1005.4    0.066444   24      28.727
+#          1005.4    0.070372   25      29.841
+#          1005.4      0.0741   26      30.955
+#          1005.4    0.077562   27      32.068
+#          1005.4    0.080847   28      33.182
+#          1005.5    0.084163   29      34.295
+#          1005.5    0.087153   30      35.409
+#          1005.5    0.089974   31      36.523
+#          1005.5     0.09246   32      37.636
+#          1005.5    0.095925   33       38.75
+#          1005.5    0.097672   34      39.864
+#          1005.5     0.10031   35      40.977
+#          1005.5     0.10218   36      42.091
+#          1005.5     0.10452   37      43.205
+#          1005.5     0.10649   38      44.318
+#          1005.5     0.10854   39      45.432
+#          1005.5      0.1106   40      46.545
+#          1005.5      0.1127   41      47.659
+#          1005.5     0.11421   42      48.773
+#          1005.5       0.116   43      49.886
+#          1005.5     0.11764   44          51
+#          1005.5     0.11931   45      52.114
+#          1005.5     0.12077   46      53.227
+#          1005.5     0.12253   47      54.341
+#          1005.5     0.12415   48      55.455
+#          1005.5     0.12493   49      56.568
+#          1005.5     0.12647   50      57.682
+#          1005.5     0.12746   51      58.795
+#          1005.5     0.12878   52      59.909
+#          1005.5     0.12992   53      61.023
+#          1005.5     0.13138   54      62.136
+#          1005.5     0.13187   55       63.25
+#          1005.5     0.13326   56      64.364
+#          1005.5     0.13418   57      65.477
+#          1005.5      0.1357   58      66.591
+#          1005.5      0.1362   59      67.705
+#          1005.5      0.1372   60      68.818
+#          1005.5     0.13849   61      69.932
+#          1005.5     0.13906   62      71.045
+#          1005.5     0.14056   63      72.159
+#          1005.5      0.1409   64      73.273
+#          1005.5     0.14175   65      74.386
+#          1005.5     0.14234   66        75.5
+#          1005.5     0.14331   67      76.614
+#          1005.5     0.14423   68      77.727
+#          1005.5      0.1451   69      78.841
+#          1005.5     0.14588   70      79.955
+#          1005.5     0.14645   71      81.068
+#          1005.5     0.14687   72      82.182
+#          1005.5      0.1482   73      83.295
+#          1005.5     0.14841   74      84.409
+#          1005.5     0.14911   75      85.523
+#          1005.5     0.14972   76      86.636
+#          1005.5        0.15   77       87.75
+#          1005.5      0.1509   78      88.864
+#          1005.5     0.15159   79      89.977
+#          1005.5     0.15223   80      91.091
+#          1005.5     0.15266   81      92.205
+#          1005.5     0.15293   82      93.318
+#          1005.5     0.15367   83      94.432
+#          1005.5     0.15443   84      95.545
+#          1005.5     0.15472   85      96.659
+#          1005.5     0.15503   86      97.773
+#          1005.5      0.1558   87      98.886
+#          1005.5     0.15632   88         100
+#
+!XSPEC12> log none
+#
