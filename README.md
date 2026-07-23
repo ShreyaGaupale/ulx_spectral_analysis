@@ -34,7 +34,7 @@ For these models, **`ldata delchi`**, **`ufspec`**, **`eeufspec`**, and confiden
 
 ## Results
 
-The spectral fitting successfully reproduced the principal results of **Krivonos et al. (2018)**, with most best-fit parameters—including the disk temperature, photon index, temperature profile parameter (*p*), scattering fraction, and cutoff energy—remaining consistent with the published values. All phenomenological and physically motivated models were successfully implemented and their spectral properties compared with the reference work.
+The spectral fitting successfully reproduced the principal results of **Krivonos et al. (2018)**, with most best-fit parameters—including the disk temperature, photon index, temperature profile parameter (*p*), scattering fraction, and cutoff energy remaining consistent with the published values. All phenomenological and physically motivated models were successfully implemented and their spectral properties compared with the reference work.
 
 
 ## Discussion
