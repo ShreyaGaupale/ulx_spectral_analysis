@@ -1,4 +1,4 @@
-# M33 X-8 Spectral Analysis (Work in Progress)
+# M33 X-8 Spectral Analysis 
 
 Status: Work in progress. This project independently reproduces and investigates the broadband X-ray spectral analysis of the ultraluminous X-ray source (ULX) M33 X-8 using NuSTAR and Swift/XRT observations. The analysis is being extended to XMM-Newton data.
 
@@ -74,13 +74,24 @@ For these models, **`ldata delchi`**, **`ufspec`**, **`eeufspec`**, and confiden
 
 ## Discussion
 
-**Model comparison.** The four physically motivated models (χ² of 1005–1021) fit equally well, and also match the best two-component phenomenological fit (DISKBB + cutoff power law, 1009/927), so the data do not statistically favour one prescription over another. Allowing p to vary gives no improvement once NTHCOMP is included (χ² = 1005 for both models). DISKBB + NTHCOMP is adopted as the reference model because it gives one of the best fits with physically interpretable disc and Comptonisation parameters; the other models are kept to check how robust the results are.
+**Model comparison.** The four physically motivated models (χ² of 1005–1021) fit as well as the best two-component phenomenological fit (DISKBB + cutoff power law, 1009/927), so the data do not statistically favour one prescription over another. Allowing p to vary gives no improvement once NTHCOMP is included (χ² = 1005 for both models). DISKBB + NTHCOMP is adopted as the reference model because it gives one of the best fits with physically interpretable disc and Comptonisation parameters; the other models are kept to check how robust the results are.
+
+**Temperature profile.** The DISKPBB-only fit drives p to its lower limit of 0.5, but when a Comptonised component is added, p returns to about 0.75. This suggests that the flat profile in the single-disc fit compensates for the missing high-energy tail, and that a slim-disc interpretation is not required, in line with Krivonos et al.
 
 **Electron temperature.** The main difference from Krivonos et al. is the constraint on kTe. For DISKBB + NTHCOMP, the best-fit value (13.02 ± 26.10 keV) is close to the published 17.7 (+1.3/−2.4) keV, but the uncertainty is far larger. For DISKPBB + NTHCOMP, Krivonos et al. report only a lower limit (kTe > 100 keV). Scans with `steppar` show that the fit statistic changes only marginally over a broad range of kTe, so it is weakly constrained rather than measured here.
 
-**Possible contributor.** The Swift/XRT spectrum was extracted manually here, whereas the reference study used the online tools of the UK Swift Science Data Centre, including their pile-up treatment. Since the soft spectrum constrains the thermal disc component, this difference may affect the kTe constraint. It is a plausible contributor but has not been tested; the XMM-Newton extension is intended to help examine it.
+**Possible contributors.** The Swift/XRT spectrum was extracted manually here, whereas the reference study used the online tools of the UK Swift Science Data Centre, including their pile-up treatment. Since the soft spectrum constrains the thermal disc component, this may affect the kTe constraint. This has not been tested. In addition, the Swift/XRT observation (2012) is not simultaneous with the NuSTAR observations (2017), and the cross-calibration constant can absorb differences in normalisation but not changes in spectral shape in a variable source.
 
 **West et al. (2018).** Using NuSTAR and XMM-Newton data, West et al. found that an additional Comptonised component above 10 keV is required, ruling out a single advection-dominated disc and classical sub-Eddington models. This agrees with the poor fits of the single-component models here.
+
+## Future Work
+
+- **Reproduce Section 3.1 of West et al. (2018)** using the same NuSTAR observations as Krivonos et al. together with XMM-Newton ObsID 0800350201, with the XMM-Newton data reduced with SAS.
+- **Use the nearly simultaneous XMM-Newton and NuSTAR data** to remove the Swift/NuSTAR non-simultaneity and test whether better soft-band coverage tightens the kTe constraint.
+- **Test the Swift/XRT extraction difference** by refitting with the UK Swift Science Data Centre spectrum.
+- **Repeat the model comparison** on the combined dataset, with `steppar` scans and confidence contours for kTe and Γ.
+- **Upload the XSPEC fitting scripts and plotting workflow.**
+- **Apply the same workflow to other ULXs and compact objects.**
 
 ## Technical Report
 
