@@ -84,24 +84,4 @@ For these models, **`ldata delchi`**, **`ufspec`**, **`eeufspec`**, and confiden
 
 ## Technical Report
 
-A full technical report of this analysis is included in this repository: **⚠️ FILL: [`report/M33X8_report.pdf`](report/M33X8_report.pdf)** (LaTeX source in the same folder).
-
-## Results
-
-The spectral fitting successfully reproduced the principal results of **Krivonos et al. (2018)**, with most best-fit parameters—including the disk temperature, photon index, temperature profile parameter (*p*), scattering fraction, and cutoff energy remaining consistent with the published values. All phenomenological and physically motivated models were successfully implemented and their spectral properties compared with the reference work.
-
-
-## Discussion
-
-One notable discrepancy was found for the **DISKBB + NTHCOMP** model. While the best-fit parameters closely matched those reported by Krivonos et al. (2018), the electron temperature of the Comptonizing corona (**kTe**) remained only weakly constrained in the present analysis. Parameter-space exploration using XSPEC (`steppar`) showed that the fit statistic changed only marginally over a broad range of electron temperatures, unlike the tighter constraint reported in the reference paper. A likely reason is the independent manual reduction of the **Swift/XRT** spectrum, where pile-up correction becomes critical. The reference paper used the pile-up corrected spectrum provided directly by the **UK Swift Science Data Centre**, whereas this work performed the complete extraction manually using **HEASoft**. Since the Swift soft X-ray spectrum anchors the thermal disk component, even small differences in pile-up treatment can propagate into the Comptonization parameters and reduce the sensitivity to **kTe**.
-
-Interestingly, this behaviour is more consistent with **West et al. (2018)**, who combined **NuSTAR** and **XMM-Newton** observations and argued that the **DISKBB + NTHCOMP** model, although statistically acceptable, does not uniquely describe the physical nature of M33 X-8. Their work instead favours a broadened disk associated with near- or super-Eddington accretion, highlighting that different physically motivated models can produce similar statistical fits while implying different accretion scenarios.
-
-
-## Future Work
-
-- Add complete XSPEC fitting scripts.
-- Upload plotting notebooks and analysis workflow.
-- Include comparison tables for all fitted models.
-- Add parameter confidence analysis and contour plots.
-- Extend the repository with timing analysis and additional ULX spectral models.
+A full technical report of this analysis is included in this repository: report/M33_Analysis_report.pdf
